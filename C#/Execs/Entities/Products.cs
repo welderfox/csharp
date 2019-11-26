@@ -6,11 +6,11 @@ namespace Execs
     public double Preco { get; set; }
     public int Quantidade { get; set; }
 
-    // public Product(string name, double price)
-    // {
-    //   Nome = name;
-    //   Preco = price;
-    // }
+    public Product(string name, double price)
+    {
+      Nome = name;
+      Preco = price;
+    }
     public double ValorTotalEmEstoque()
     {
       return Preco * Quantidade;

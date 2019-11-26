@@ -8,7 +8,7 @@ namespace Execs
 
     public static void Main(string[] args)
     {
-      Product p = new Product();
+      Product p = new Product("PneuzinMaldo", 3.99);
 
       Console.WriteLine("Entre os dados do produto: ");
       Console.Write("Nome: ");
