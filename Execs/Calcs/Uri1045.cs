@@ -6,7 +6,7 @@ namespace Execs
   class Uri1045
   {
 
-    public static void TrianguloTypes()
+    public void TrianguloTypes()
     {
       string[] valores = Console.ReadLine().Split(' ');
       double n1, n2, n3, A, B, C;
