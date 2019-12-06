@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Globalization;
 
 namespace Execs
 {
-  class Program
+  class Uri1051
   {
 
-    public static void Main(string[] args)
+    public static void imposto()
     {
       double salario, imposto;
       salario = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
