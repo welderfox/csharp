@@ -3,37 +3,11 @@ using System.Globalization;
 
 namespace Execs
 {
-  class Program
-  {
-
-    public static void Main(string[] args)
+    class Program
     {
-      int numero;
-      int fatorial = 0;
-      numero = int.Parse(Console.ReadLine());
-      var initialNumber = numero;
-      while (numero != 1)
-      {
-        var fator = numero - 1;
-        if (numero == initialNumber)
+        public static void Main(string[] args)
         {
-          fatorial = numero * fator;
+            Console.WriteLine("Ultimo exercício feito, Uri1131");
         }
-        else
-        {
-          if (fator >= 1)
-          {
-            fatorial = fatorial * fator;
-          }
-          else
-          {
-            fatorial = fatorial * (fator - 1);
-          }
-        }
-        numero--;
-      }
-      Console.WriteLine(fatorial);
-      Console.ReadLine();
     }
-  }
 }
