@@ -21,3 +21,20 @@ public class Designer : Funcionario
     Salario += 500;
   }
 }
+
+public class Poligonos
+{
+
+  public virtual double Area(double x, double y)
+  {
+    return x * y;
+  }
+}
+
+public class Triangulo : Poligonos
+{
+  public override double Area(double b, double h)
+  {
+    return (b * h) / 2;
+  }
+}

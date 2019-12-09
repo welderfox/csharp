@@ -3,11 +3,11 @@ using System.Globalization;
 
 namespace Execs
 {
-    class Program
+  class Program
+  {
+    public static void Main(string[] args)
     {
-        public static void Main(string[] args)
-        {
-            Console.WriteLine("Ultimo exercício feito, Uri1131");
-        }
+      Console.WriteLine("Ultimo exercício feito, Uri1131");
     }
+  }
 }
