@@ -7,7 +7,7 @@ namespace Execs
   {
     public static void Main(string[] args)
     {
-      Console.WriteLine("Ultimo exercício feito, Uri1131");
+      Console.WriteLine("Fazer próximos exercícios em casa!");
     }
   }
 }
