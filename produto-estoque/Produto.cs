@@ -1,20 +1,41 @@
-using System;
 using System.Globalization;
-using System.Collections.Generic;
 
 namespace produto_estoque
 {
   class Produto
   {
-    public string Nome;
-    public double Preco;
-    public int Quantidade;
+    private string _nome;
+    public double Preco { get; private set; }
+    public int Quantidade { get; private set; }
+
+    public Produto()
+    {
+    }
 
     public Produto(string nome, double preco, int quantidade)
     {
       Nome = nome;
       Preco = preco;
       Quantidade = quantidade;
+    }
+
+    public Produto(string nome, double preco)
+    {
+      Nome = nome;
+      Preco = preco;
+      Quantidade = 0;
+    }
+
+    public string Nome
+    {
+      get { return _nome; }
+      set
+      {
+        if (value != null && value.Length > 1)
+        {
+          _nome = value;
+        }
+      }
     }
 
     public double ValorTotalEmEstoque()
