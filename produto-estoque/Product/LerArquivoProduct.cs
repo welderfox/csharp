@@ -23,7 +23,7 @@ namespace produto_estoque
 
           string name = fields[0];
           double price = double.Parse(fields[1], CultureInfo.InvariantCulture);
-          list.Add(new Produto(name, price));
+          list.Add(new Produto(name, price, 10));
         }
       }
 

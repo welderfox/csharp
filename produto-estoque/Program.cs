@@ -15,9 +15,9 @@ namespace produto_estoque
       Console.Write("Preço: ");
       double preco = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
 
-      Produto p = new Produto(nome, preco);
       Console.Write("Qunatidade no estoque: ");
-      p.Quantidade = int.Parse(Console.ReadLine());
+      int quantidade = int.Parse(Console.ReadLine());
+      Produto p = new Produto(nome, preco, quantidade);
 
       Console.WriteLine($"Dados do produto: " + p);
 
