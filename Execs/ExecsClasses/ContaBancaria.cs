@@ -15,9 +15,9 @@ namespace Execs
       Saldo = 0;
     }
 
-    public ContaBancaria(int numero, string proprietario, double saldoIncial) : this(numero, proprietario)
+    public ContaBancaria(int numero, string proprietario, double DepositoIncial) : this(numero, proprietario)
     {
-      Saldo = saldoIncial;
+      Deposito(DepositoIncial);
     }
 
     public void Saque(double qnttSaque)

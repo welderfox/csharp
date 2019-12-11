@@ -11,7 +11,7 @@ namespace Execs
       string proprietario;
       char resposta;
       double saldoInicial, deposito, saque;
-      ContaBancaria nova;
+      ContaBancaria conta;
       Console.Write("Entre o número da conta: ");
       numero = int.Parse(Console.ReadLine());
       Console.Write("Entre o titular da conta: ");
@@ -22,25 +22,25 @@ namespace Execs
       {
         Console.Write("Entre o valor de depósito inicial: ");
         saldoInicial = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-        nova = new ContaBancaria(numero, proprietario, saldoInicial);
+        conta = new ContaBancaria(numero, proprietario, saldoInicial);
       }
       else
       {
-        nova = new ContaBancaria(numero, proprietario);
+        conta = new ContaBancaria(numero, proprietario);
       }
 
       Console.WriteLine("Dados da conta:");
-      Console.WriteLine(nova);
+      Console.WriteLine(conta);
       Console.Write("Entre um valor para depósito: ");
       deposito = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-      nova.Deposito(deposito);
+      conta.Deposito(deposito);
       Console.WriteLine("Dados da conta atualizados:");
-      Console.WriteLine(nova);
+      Console.WriteLine(conta);
       Console.Write("Entre um valor para saque: ");
       saque = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
-      nova.Saque(saque);
+      conta.Saque(saque);
       Console.WriteLine("Dados da conta atualizados:");
-      Console.WriteLine(nova);
+      Console.WriteLine(conta);
     }
   }
 }
