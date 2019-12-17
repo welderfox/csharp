@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 using System.Globalization;
 using System.Collections.Generic;
 
 namespace Execs
 {
-  class Program
+  class EmployeesIncrease
   {
-    public static void Main(string[] args)
+    public static void Principal()
     {
       Console.Write("How many employees will be registered? ");
       int qnt = int.Parse(Console.ReadLine());
