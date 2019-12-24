@@ -8,7 +8,7 @@ namespace Execs
   {
     public static void Main(string[] args)
     {
-      Console.WriteLine("Hello World!!");
+      Console.WriteLine("Parei no exec 7 do pdf exercicios02-propostos-vetores");
     }
   }
 }
