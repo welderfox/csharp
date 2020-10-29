@@ -10,7 +10,7 @@ public class Programador : Funcionario
 {
   public override void Reajustar()
   {
-    Salario += 1000;
+    Salario += 6000;
   }
 }
 
